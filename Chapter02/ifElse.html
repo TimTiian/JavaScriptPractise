@@ -8,17 +8,21 @@
 </head>
 
 <body>
+    <button onclick="myFunction()">点击这里</button>
+
     <script type="text/javascript">
-        var d = new Date();
-        var time = d.getHours();
-        if (time < 10) {
-            document.write("<b>早上好</b>");
-        }
-        else if (time >= 10 && time < 20) {
-            document.write("<b>今天好</b>");
-        }
-        else {
-            document.write("<b>晚上好!</b>");
+        function myFunction() {
+            var d = new Date();
+            var time = d.getHours();
+            if (time < 10) {
+                document.write("<b>早上好</b>");
+            }
+            else if (time >= 10 && time < 20) {
+                document.write("<b>今天好</b>");
+            }
+            else {
+                document.write("<b>我不困!</b>");
+            }
         }
     </script>
     <p>
